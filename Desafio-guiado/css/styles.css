@@ -32,12 +32,13 @@ img {
 .country-List, .favorite-List {
     padding: 5px;
     border: 1px solid gray;
-    border-radius: 10px;
+    border-radius: 10px ;
     margin-right: 15px;
+    
 }
 
 
 #titulo-sombras {
 
-    text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87
+    text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87;
 }

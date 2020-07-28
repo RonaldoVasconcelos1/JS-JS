@@ -41,6 +41,7 @@ async function fetchCountries() {
             id : numericCode,
             name : translations.pt,
             population,
+            formatedPopulation : formatNumber(population),
             flag 
         };
     });
@@ -58,7 +59,7 @@ function renderCountryList() {
     let countriesHTML = "<div>"
 
     allCountries.forEach(country => {
-        const { name, flag, id, population} = country;
+        const { name, flag, id, population, formatedPopulation} = country;
 
         const countryHTML = `
         <div class='country' >
@@ -69,7 +70,7 @@ function renderCountryList() {
             <div>
                 <ul>
                 <li>${name}</li>
-                <li>${population}</li>
+                <li>${formatedPopulation}</li>
                 </ul>
             </div>
         </div>`;
@@ -85,7 +86,7 @@ function renderFavorites() {
 
     favoritesCountries.forEach( country => {
         
-        const { name, flag, id, population} = country;
+        const { name, flag, id, population, formatedPopulation} = country;
         const favoriteCountryHTML = `
         <div class='country' >
             <div>
@@ -95,7 +96,7 @@ function renderFavorites() {
             <div>
                 <ul>
                 <li>${name}</li>
-                <li>${population}</li>
+                <li>${formatedPopulation}</li>
                 </ul>
             </div>
         </div>`;
@@ -113,12 +114,53 @@ function renderSumary() {
         return accumulator + current.population;
     },0);
 
-    const totalFavorites = favoritesCountriesf.reduce((accumulator, current) => {
+    const totalFavorites = favoritesCountries.reduce((accumulator, current) => {
         return accumulator + current.population;
     },0);
 
-    totalPopulationList.textContent = totalPopulation;
-    totalPopulationFavorites.textContent = totalFavorites;
+    totalPopulationList.textContent =formatNumber(totalPopulation);
+    totalPopulationFavorites.textContent = formatNumber(totalFavorites);
   
 }
-function handleCountryButtons() {}
+function handleCountryButtons() {
+    const countryButtons = Array.from(tabCountries.querySelectorAll('.btn'));
+    const favoritesButtons = Array.from(tabFavorites.querySelectorAll('.btn'));
+
+    countryButtons.forEach(button => {
+        button.addEventListener('click', () => addToFavorites(button.id));
+    });
+
+    favoritesButtons.forEach(button => {
+        button.addEventListener('click', () => removeToFavorites(button.id));
+    });
+
+}
+
+function addToFavorites(id) {
+    const countryToAdd = allCountries.find( country => country.id === id);
+    favoritesCountries = [...favoritesCountries, countryToAdd];
+
+   favoritesCountries.sort((a,b) => {
+       return a.name.localeCompare(b.name);
+   });
+   allCountries = allCountries.filter(country => country.id !== id);
+   render();
+}
+
+function removeToFavorites(id) {
+
+    const countryToRemove = favoritesCountries.find( country => country.id ===id);
+    allCountries = [... allCountries, countryToRemove];
+
+    favoritesCountries.sort((a,b) => {
+        return a.name.localeCompare(b.name);
+    });
+
+    favoritesCountries = favoritesCountries.filter(country => country.id !== id);
+    render();
+}
+
+
+function formatNumber(number) {
+    return numberFormat.format(number);
+}
