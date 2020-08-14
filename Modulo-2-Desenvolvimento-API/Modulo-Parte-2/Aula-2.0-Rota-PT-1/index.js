@@ -1,7 +1,7 @@
 import express from "express";
 
 const app = express();
-app.use(express.json())
+app.use(express.json());
 
 // all metodos , recebe qualquer metodo de HTTP
 app.all("/testeAll", (req, res) => {
@@ -49,13 +49,14 @@ app.get("/testeMulitpleHandlers", (req, res, value) => {
 
 //next com array
 
-const callback1 = (req, res, value) => {
-    console.log("callback 1");
-    value();
+const callback1 = (req, res, next) => {
+    //logica aksuaskhasjlkaslkmasjlnasdl
+
+    next();
 }
-const callback2 = (req, res, value) => {
-    console.log("callback 2");
-    value();
+const callback2 = (req, res, next) => {
+    //asidygasiygshjasdjhgasd
+    next();
 }
 function callback3(req, res) {
     console.log("FIM");
