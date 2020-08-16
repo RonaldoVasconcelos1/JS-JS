@@ -1,0 +1,12 @@
+2020-08-16T14:05:30.458Z [my-app] error: error log
+2020-08-16T14:05:30.469Z [my-app] warn: Warn log
+2020-08-16T14:05:30.493Z [my-app] info: Info log
+2020-08-16T14:05:30.494Z [my-app] verbose: verbose log
+2020-08-16T14:05:30.499Z [my-app] debug: debug log
+2020-08-16T14:05:30.501Z [my-app] silly: Silly llog
+2020-08-16T14:10:03.198Z [my-app] error: Error log
+2020-08-16T14:10:03.203Z [my-app] warn: Warn log
+2020-08-16T14:10:03.210Z [my-app] info: Info log
+2020-08-16T14:10:03.211Z [my-app] verbose: Verbose log
+2020-08-16T14:10:03.213Z [my-app] debug: Debug log
+2020-08-16T14:10:03.213Z [my-app] silly: Silly llog
