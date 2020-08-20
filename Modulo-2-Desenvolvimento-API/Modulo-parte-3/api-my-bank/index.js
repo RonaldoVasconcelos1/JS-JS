@@ -3,6 +3,7 @@ import accountsRouter from './routes/accounts.js';
 import { promises as fs } from 'fs';
 
 const app = express();
+global.FileName = "accounts.json";
 app.use(express.json());
 
 
