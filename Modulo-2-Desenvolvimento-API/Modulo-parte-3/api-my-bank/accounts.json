@@ -1,11 +1,6 @@
-{ 
+{
   "nextId": 4,
   "accounts": [
-    {
-      "id": 1,
-      "name": "Ronaldo Vasconcelos",
-      "balance": 3000
-    },
     {
       "id": 2,
       "name": "Vasconcelos Ronaldo",
