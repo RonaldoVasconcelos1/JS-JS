@@ -1,0 +1,4 @@
+2020-08-22T11:18:37.721Z [my-bank-api] info: UHUUU
+2020-08-22T11:19:17.887Z [my-bank-api] info: GET:ID /account
+2020-08-22T11:19:54.172Z [my-bank-api] error: Metodo: POST, EndPoint: /account, Error: jsonStringify is not defined
+2020-08-22T11:19:54.877Z [my-bank-api] info: UHUUU

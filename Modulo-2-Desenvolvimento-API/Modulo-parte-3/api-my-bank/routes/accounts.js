@@ -14,6 +14,7 @@ router.post("/", async (req, res, next) => {
 
     await fs.writeFile(global.FileName, JSON.stringify(json, null, 2));
     res.send(account);
+    Logger.info(`POST /account ${jsonStringify(account)}`)
     res.end();
   } catch (err) {
     next(err);
@@ -27,6 +28,7 @@ router.get("/", async (req, res, next) => {
     const json = JSON.parse(data);
     delete json.nextId;
     res.send(json);
+    Logger.info("GET /account");
   } catch (err) {
     next(err);
   }
@@ -41,6 +43,7 @@ router.get("/:id", async (req, res, next) => {
       (account) => account.id === parseInt(req.params.id)
     );
     res.send(account);
+    Logger.info("GET:ID /account");
   } catch (err) {
     next(err);
 
@@ -56,8 +59,8 @@ router.delete("/:id", async (req, res, next) => {
       (account) => account.id !== parseInt(req.params.id)
     );
     await fs.writeFile(global.FileName, JSON.stringify(json, null, 2));
-    res.send("deletado com sucesso");
     res.end();
+    Logger.info(`DELETE:ID ${req.params.id}, /account`);
   } catch (err) {
     next(err);
 
@@ -78,6 +81,8 @@ router.put("/", async (req, res, next) => {
     await fs.writeFile(global.FileName, JSON.stringify(json, null, 2));
 
     res.send(account);
+    Logger.info(`PUT:ID ${req.params.id} /account, ${jsonStringify( account)}`);
+
 
     
   } catch (err) {
@@ -102,6 +107,7 @@ router.patch('/updateBalance', async(req, res) => {
     await fs.writeFile(global.FileName, JSON.stringify(json, null, 2));
   
     res.send(account.balance);
+    Logger.info(`PATCH:ID ${req.params.id} /account, ${jsonStringify(account)}`);
 
   } catch (err) {
     next(err);
@@ -109,6 +115,7 @@ router.patch('/updateBalance', async(req, res) => {
 });
 
 router.use("/", async (err, req, res, next) => {
+  global.Logger.error(`Metodo: ${req.method}, EndPoint: ${req.baseUrl}, Error: ${err.message}`);
   console.log(err);
   res.status(400).send({ error: err.message });
 });
