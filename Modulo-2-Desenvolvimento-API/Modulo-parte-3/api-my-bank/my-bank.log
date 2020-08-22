@@ -2,3 +2,132 @@
 2020-08-22T11:19:17.887Z [my-bank-api] info: GET:ID /account
 2020-08-22T11:19:54.172Z [my-bank-api] error: Metodo: POST, EndPoint: /account, Error: jsonStringify is not defined
 2020-08-22T11:19:54.877Z [my-bank-api] info: UHUUU
+2020-08-22T14:55:05.120Z [my-bank-api] info: UHUUU
+2020-08-22T14:57:10.137Z [my-bank-api] info: UHUUU
+2020-08-22T14:57:14.646Z [my-bank-api] info: UHUUU
+2020-08-22T14:57:18.638Z [my-bank-api] info: UHUUU
+2020-08-22T14:57:31.987Z [my-bank-api] info: UHUUU
+2020-08-22T14:57:35.149Z [my-bank-api] info: UHUUU
+2020-08-22T14:58:25.897Z [my-bank-api] info: UHUUU
+2020-08-22T14:59:10.810Z [my-bank-api] info: UHUUU
+2020-08-22T14:59:13.820Z [my-bank-api] info: UHUUU
+2020-08-22T14:59:16.997Z [my-bank-api] info: UHUUU
+2020-08-22T14:59:18.515Z [my-bank-api] info: UHUUU
+2020-08-22T14:59:22.319Z [my-bank-api] info: UHUUU
+2020-08-22T14:59:29.499Z [my-bank-api] info: UHUUU
+2020-08-22T14:59:32.216Z [my-bank-api] info: UHUUU
+2020-08-22T14:59:42.868Z [my-bank-api] info: UHUUU
+2020-08-22T14:59:43.701Z [my-bank-api] info: UHUUU
+2020-08-22T14:59:54.734Z [my-bank-api] info: UHUUU
+2020-08-22T14:59:55.936Z [my-bank-api] info: UHUUU
+2020-08-22T15:00:01.244Z [my-bank-api] info: UHUUU
+2020-08-22T15:00:06.161Z [my-bank-api] info: UHUUU
+2020-08-22T15:00:22.981Z [my-bank-api] info: UHUUU
+2020-08-22T15:01:28.631Z [my-bank-api] info: UHUUU
+2020-08-22T15:03:44.977Z [my-bank-api] info: UHUUU
+2020-08-22T15:03:55.545Z [my-bank-api] info: UHUUU
+2020-08-22T15:03:56.684Z [my-bank-api] info: UHUUU
+2020-08-22T15:04:10.200Z [my-bank-api] info: GET:ID /account
+2020-08-22T15:05:40.873Z [my-bank-api] info: GET /account
+2020-08-22T15:05:53.945Z [my-bank-api] error: Metodo: PUT, EndPoint: /account, Error: jsonStringify is not defined
+2020-08-22T15:05:54.585Z [my-bank-api] info: UHUUU
+2020-08-22T15:06:28.782Z [my-bank-api] info: UHUUU
+2020-08-22T15:06:34.981Z [my-bank-api] info: UHUUU
+2020-08-22T15:06:40.797Z [my-bank-api] info: PUT:ID undefined /account, {}
+2020-08-22T15:06:41.400Z [my-bank-api] info: UHUUU
+2020-08-22T15:07:48.843Z [my-bank-api] info: UHUUU
+2020-08-22T15:08:14.470Z [my-bank-api] info: GET /account
+2020-08-22T15:08:30.452Z [my-bank-api] info: PUT:ID undefined /account, {}
+2020-08-22T15:08:31.065Z [my-bank-api] info: UHUUU
+2020-08-22T15:09:12.835Z [my-bank-api] info: UHUUU
+2020-08-22T15:09:16.918Z [my-bank-api] info: PUT:ID /account, {}
+2020-08-22T15:09:17.776Z [my-bank-api] info: UHUUU
+2020-08-22T15:09:34.772Z [my-bank-api] info: PUT:ID /account, {}
+2020-08-22T15:09:35.486Z [my-bank-api] info: UHUUU
+2020-08-22T15:11:26.951Z [my-bank-api] info: UHUUU
+2020-08-22T15:11:27.994Z [my-bank-api] info: UHUUU
+2020-08-22T15:11:30.967Z [my-bank-api] info: PUT:ID /account, {"id":3222,"name":"José Afonso","balance":1400.55}
+2020-08-22T15:11:31.599Z [my-bank-api] info: UHUUU
+2020-08-22T15:12:03.896Z [my-bank-api] info: UHUUU
+2020-08-22T15:12:08.073Z [my-bank-api] info: UHUUU
+2020-08-22T15:12:10.327Z [my-bank-api] info: UHUUU
+2020-08-22T15:12:15.043Z [my-bank-api] info: PUT:ID /account, {"id":3222,"name":"José Afonso","balance":1400.55}
+2020-08-22T15:12:15.695Z [my-bank-api] info: UHUUU
+2020-08-22T15:12:51.132Z [my-bank-api] info: UHUUU
+2020-08-22T15:13:11.836Z [my-bank-api] info: PUT:ID /account, {"id":3222,"name":"José Afonso","balance":1400.55}
+2020-08-22T15:13:12.427Z [my-bank-api] info: UHUUU
+2020-08-22T15:13:28.676Z [my-bank-api] info: UHUUU
+2020-08-22T15:13:33.716Z [my-bank-api] error: Metodo: PUT, EndPoint: /account, Error: Cannot set property '0' of undefined
+2020-08-22T15:14:05.831Z [my-bank-api] info: UHUUU
+2020-08-22T15:14:08.145Z [my-bank-api] info: PUT:ID /account, {"id":3222,"name":"José Afonso","balance":1400.55}
+2020-08-22T15:14:08.784Z [my-bank-api] info: UHUUU
+2020-08-22T15:15:04.211Z [my-bank-api] info: UHUUU
+2020-08-22T15:15:12.078Z [my-bank-api] info: PUT:ID /account, {"id":3222,"name":"José Afonso","balance":1400.55}
+2020-08-22T15:15:12.686Z [my-bank-api] info: UHUUU
+2020-08-22T15:15:41.963Z [my-bank-api] error: Metodo: POST, EndPoint: /account, Error: jsonStringify is not defined
+2020-08-22T15:15:42.786Z [my-bank-api] info: UHUUU
+2020-08-22T15:16:16.321Z [my-bank-api] info: UHUUU
+2020-08-22T15:16:23.760Z [my-bank-api] info: UHUUU
+2020-08-22T15:16:29.462Z [my-bank-api] error: Metodo: PUT, EndPoint: /account, Error: Cannot read property 'findIndex' of undefined
+2020-08-22T15:16:39.273Z [my-bank-api] info: UHUUU
+2020-08-22T15:16:41.868Z [my-bank-api] info: UHUUU
+2020-08-22T15:16:42.515Z [my-bank-api] error: Metodo: PUT, EndPoint: /account, Error: Cannot set property '0' of undefined
+2020-08-22T15:16:53.247Z [my-bank-api] info: UHUUU
+2020-08-22T15:16:53.332Z [my-bank-api] info: PUT:ID /account, {"id":3222,"name":"José Afonso","balance":1400.55}
+2020-08-22T15:16:54.320Z [my-bank-api] info: UHUUU
+2020-08-22T15:17:00.093Z [my-bank-api] info: UHUUU
+2020-08-22T15:17:12.615Z [my-bank-api] info: UHUUU
+2020-08-22T15:17:14.470Z [my-bank-api] info: UHUUU
+2020-08-22T15:17:17.394Z [my-bank-api] info: UHUUU
+2020-08-22T15:17:18.862Z [my-bank-api] info: UHUUU
+2020-08-22T15:17:21.313Z [my-bank-api] info: UHUUU
+2020-08-22T15:17:22.854Z [my-bank-api] info: UHUUU
+2020-08-22T15:17:28.696Z [my-bank-api] info: UHUUU
+2020-08-22T15:17:37.149Z [my-bank-api] info: UHUUU
+2020-08-22T15:17:39.522Z [my-bank-api] info: UHUUU
+2020-08-22T15:17:41.095Z [my-bank-api] info: UHUUU
+2020-08-22T15:17:42.582Z [my-bank-api] info: UHUUU
+2020-08-22T15:17:43.555Z [my-bank-api] error: Metodo: PUT, EndPoint: /account, Error: Registro não encontrado
+2020-08-22T15:17:49.365Z [my-bank-api] info: PUT:ID /account, {"id":1,"name":"José Afonso","balance":1400.55}
+2020-08-22T15:17:49.983Z [my-bank-api] info: UHUUU
+2020-08-22T15:18:02.734Z [my-bank-api] info: PUT:ID /account, {"id":789,"name":"José Afonso","balance":1400.55}
+2020-08-22T15:18:03.363Z [my-bank-api] info: UHUUU
+2020-08-22T15:18:10.881Z [my-bank-api] info: GET /account
+2020-08-22T15:18:45.054Z [my-bank-api] info: UHUUU
+2020-08-22T15:19:00.130Z [my-bank-api] info: UHUUU
+2020-08-22T15:19:08.373Z [my-bank-api] error: Metodo: PUT, EndPoint: /account, Error: Registro não encontrado
+2020-08-22T15:19:13.313Z [my-bank-api] error: Metodo: PUT, EndPoint: /account, Error: Registro não encontrado
+2020-08-22T15:19:18.882Z [my-bank-api] info: PUT:ID /account, {"id":4,"name":"José Afonso","balance":1400.55}
+2020-08-22T15:19:19.519Z [my-bank-api] info: UHUUU
+2020-08-22T15:19:28.793Z [my-bank-api] error: Metodo: PUT, EndPoint: /account, Error: Registro não encontrado
+2020-08-22T15:19:34.283Z [my-bank-api] error: Metodo: PUT, EndPoint: /account, Error: Registro não encontrado
+2020-08-22T15:21:13.887Z [my-bank-api] info: UHUUU
+2020-08-22T15:21:44.563Z [my-bank-api] info: UHUUU
+2020-08-22T15:22:16.662Z [my-bank-api] info: UHUUU
+2020-08-22T15:22:20.305Z [my-bank-api] info: UHUUU
+2020-08-22T15:22:24.357Z [my-bank-api] info: UHUUU
+2020-08-22T15:22:25.355Z [my-bank-api] info: UHUUU
+2020-08-22T15:22:27.418Z [my-bank-api] info: UHUUU
+2020-08-22T15:22:53.239Z [my-bank-api] info: UHUUU
+2020-08-22T15:22:59.016Z [my-bank-api] info: UHUUU
+2020-08-22T15:23:03.663Z [my-bank-api] info: UHUUU
+2020-08-22T15:23:08.138Z [my-bank-api] info: UHUUU
+2020-08-22T15:23:14.213Z [my-bank-api] info: UHUUU
+2020-08-22T15:24:50.717Z [my-bank-api] info: UHUUU
+2020-08-22T15:25:20.885Z [my-bank-api] info: UHUUU
+2020-08-22T15:25:24.290Z [my-bank-api] info: UHUUU
+2020-08-22T15:25:49.094Z [my-bank-api] info: UHUUU
+2020-08-22T15:25:51.110Z [my-bank-api] info: UHUUU
+2020-08-22T15:25:56.554Z [my-bank-api] info: UHUUU
+2020-08-22T15:25:59.732Z [my-bank-api] info: UHUUU
+2020-08-22T15:26:04.910Z [my-bank-api] info: UHUUU
+2020-08-22T15:26:06.038Z [my-bank-api] info: UHUUU
+2020-08-22T15:27:55.639Z [my-bank-api] info: UHUUU
+2020-08-22T15:28:02.460Z [my-bank-api] info: UHUUU
+2020-08-22T15:28:03.651Z [my-bank-api] info: UHUUU
+2020-08-22T15:28:14.967Z [my-bank-api] info: UHUUU
+2020-08-22T15:28:21.435Z [my-bank-api] info: UHUUU
+2020-08-22T15:28:23.263Z [my-bank-api] info: UHUUU
+2020-08-22T15:28:24.640Z [my-bank-api] info: UHUUU
+2020-08-22T15:29:09.201Z [my-bank-api] info: UHUUU
+2020-08-22T15:29:12.457Z [my-bank-api] info: UHUUU
