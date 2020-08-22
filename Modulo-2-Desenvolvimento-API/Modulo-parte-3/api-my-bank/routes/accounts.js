@@ -3,7 +3,7 @@ import express from "express";
 import { promises as fs } from "fs";
 
 const router = express.Router();
-router.post("/", async (req, res) => {
+router.post("/", async (req, res, next) => {
   try {
     let account = req.body;
     const data = await fs.readFile(global.FileName);
@@ -16,22 +16,23 @@ router.post("/", async (req, res) => {
     res.send(account);
     res.end();
   } catch (err) {
-    res.status(400).send({ error: err.message });
+    next(err);
+
   }
 });
 
-router.get("/", async (req, res) => {
+router.get("/", async (req, res, next) => {
   try {
     const data = await fs.readFile(global.FileName);
     const json = JSON.parse(data);
     delete json.nextId;
     res.send(json);
   } catch (err) {
-    res.status(400).send({ error: err.message });
+    next(err);
   }
 });
 
-router.get("/:id", async (req, res) => {
+router.get("/:id", async (req, res, next) => {
   try {
     const data = await fs.readFile(global.FileName);
     const json = JSON.parse(data);
@@ -41,11 +42,12 @@ router.get("/:id", async (req, res) => {
     );
     res.send(account);
   } catch (err) {
-    res.status(400).send({ error: err.message });
+    next(err);
+
   }
 });
 
-router.delete("/:id", async (req, res) => {
+router.delete("/:id", async (req, res, next) => {
   try {
     const data = await fs.readFile(global.FileName);
     const json = JSON.parse(data);
@@ -57,11 +59,12 @@ router.delete("/:id", async (req, res) => {
     res.send("deletado com sucesso");
     res.end();
   } catch (err) {
-    res.status(400).send({ error: err.message });
+    next(err);
+
   }
 });
 
-router.put("/", async (req, res) => {
+router.put("/", async (req, res, next) => {
 
   try {
     let account = req.params;
@@ -79,7 +82,8 @@ router.put("/", async (req, res) => {
     
   } catch (err) {
 
-    res.status(400).send({ error: err.message})
+    next(err);
+
   }
 });
 
@@ -100,8 +104,13 @@ router.patch('/updateBalance', async(req, res) => {
     res.send(account.balance);
 
   } catch (err) {
-     res.status(400).send({ error: err.message });
+    next(err);
   }
+});
+
+router.use("/", async (err, req, res, next) => {
+  console.log(err);
+  res.status(400).send({ error: err.message });
 });
 
 export default router;
