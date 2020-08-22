@@ -61,4 +61,47 @@ router.delete("/:id", async (req, res) => {
   }
 });
 
+router.put("/", async (req, res) => {
+
+  try {
+    let account = req.params;
+    const data = await fs.readFile(global.FileName);
+    const json = JSON.parse(data);
+
+    const index = json.accounts.findIndex(a => a.id === a.id);
+
+    json.accounts[index] =account;
+
+    await fs.writeFile(global.FileName, JSON.stringify(json, null, 2));
+
+    res.send(account);
+
+    
+  } catch (err) {
+
+    res.status(400).send({ error: err.message})
+  }
+});
+
+router.patch('/updateBalance', async(req, res) => {
+
+  try {
+
+    let account = req.params;
+    const data =  await fs.readFile(global.FileName);
+    const json = JSON.parse(data);
+  
+    const index = json.accounts.findIndex(ac => ac.id === ac.id);
+  
+    json.accounts[index].balance = account.balance;
+  
+    await fs.writeFile(global.FileName, JSON.stringify(json, null, 2));
+  
+    res.send(account.balance);
+
+  } catch (err) {
+     res.status(400).send({ error: err.message });
+  }
+});
+
 export default router;
